@@ -1,4 +1,48 @@
-.header{
-  background: #69F0AE;
-  font-size: 64px;
+.header {
+  background-color: #aa0601;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  @include mobile{
+    flex-direction: column;
+    max-width: 100%;
+    padding:0;
+  }
+  h1 {
+    padding: 16px 0;
+    @include mobile {
+      padding: 12px;
+    }
+  }
+  h1 > a {
+    display: block;
+    background-image: url("../assets/images/logo.png");
+    background-size: cover;
+    width: 80px;
+    height: 48.57px;
+    text-indent: 101%;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  ul {
+    display: flex;
+    align-items: center;
+    @include mobile {
+      flex-wrap: wrap;
+    }
+  }
+  li {
+    margin-left: 64px;
+    font-size: 20px;
+    @include mobile {
+      font-size: 16px;
+      text-align: center;
+      border: 1px solid #fff;
+      padding: 12px 0;
+      margin-left: 0;
+      width: calc(50% - 2px);
+    }
+  }
 }
