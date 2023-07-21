@@ -1,7 +1,9 @@
 .store {
-  padding: 96px 0 80px 0;
+  padding-top: 96px;
+  padding-bottom: 80px;
   @include mobile{
-    padding: 40px 0 64px 0;
+    padding-top: 40px;
+    padding-bottom: 64px;
   }
   h2 {
     border-left: 8px solid #9f1213;
@@ -13,7 +15,7 @@
     }
   }
   ul {
-    
+    color:#212529;
     display: grid;
     grid-gap:48px 1.85%;
     grid-template-columns: auto auto auto;

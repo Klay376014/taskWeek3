@@ -2,15 +2,15 @@
 @import "https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0";
 
 .container {
-  max-width: 1296px;
+  max-width: 1320px;
   margin: 0 auto;
   padding: 0 12px;
   @include pad{
-    max-width: 696px;
+    max-width: 768px;
     padding: 0 36px;
   }
   @include mobile{
-    max-width: 348px;
+    max-width: 374px;
     padding: 0 13px;
   }
 }
