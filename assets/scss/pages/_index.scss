@@ -33,6 +33,9 @@
     padding: 6px 12px;
     border: 0;
     cursor: pointer;
+    &:hover{
+      background: #7e0400;
+    }
   }
 }
 
@@ -300,9 +303,6 @@
       @include mobile {
         margin-bottom: 24px;
       }
-      img {
-        height: 100%;
-      }
     }
 
     button {
@@ -315,6 +315,9 @@
       font-size: 16px;
       font-weight: bold;
       cursor: pointer;
+      &:hover{
+        background: #7e0400;
+      }
       @include pad {
         padding-left: 136px;
         padding-right: 136px;

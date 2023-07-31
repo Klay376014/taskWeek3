@@ -1,12 +1,12 @@
-.footer {
+footer {
   background: #aa0601;
-  &-info {
+  .footer-info {
     padding-top: 48px;
     @include mobile{
       padding-top: 24px;
     }
   }
-  &-contact {
+  .footer-contact {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;

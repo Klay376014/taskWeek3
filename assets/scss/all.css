@@ -107,7 +107,7 @@ h2 {
   }
 }
 
-.header {
+header {
   background-color: #aa0601;
 }
 
@@ -163,19 +163,27 @@ h2 {
     width: 50%;
   }
 }
+.nav li > a {
+  padding: 24px 0;
+}
+@media (max-width: 767px) {
+  .nav li > a {
+    padding: 12px 60px;
+  }
+}
 
-.footer {
+footer {
   background: #aa0601;
 }
-.footer-info {
+footer .footer-info {
   padding-top: 48px;
 }
 @media (max-width: 767px) {
-  .footer-info {
+  footer .footer-info {
     padding-top: 24px;
   }
 }
-.footer-contact {
+footer .footer-contact {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -183,108 +191,108 @@ h2 {
   padding-bottom: 32px;
 }
 @media (max-width: 767px) {
-  .footer-contact {
+  footer .footer-contact {
     padding-bottom: 24px;
   }
 }
-.footer-contact ul {
+footer .footer-contact ul {
   display: flex;
   align-items: center;
 }
 @media (max-width: 767px) {
-  .footer-contact ul {
+  footer .footer-contact ul {
     align-items: flex-start;
   }
-  .footer-contact ul.page {
+  footer .footer-contact ul.page {
     display: none;
   }
-  .footer-contact ul.icon {
+  footer .footer-contact ul.icon {
     order: 1;
   }
 }
-.footer-contact ul.page > li {
+footer .footer-contact ul.page > li {
   margin-right: 48px;
 }
-.footer-contact ul.page > li:last-child {
+footer .footer-contact ul.page > li:last-child {
   margin-right: 0;
 }
-.footer-contact ul.icon > li {
+footer .footer-contact ul.icon > li {
   margin-left: 32px;
 }
-.footer-contact ul.icon > li:first-child {
+footer .footer-contact ul.icon > li:first-child {
   margin-left: 0;
 }
-.footer-contact ul.icon > li img {
+footer .footer-contact ul.icon > li img {
   vertical-align: middle;
 }
 @media (max-width: 992px) {
-  .footer-contact ul.icon > li {
+  footer .footer-contact ul.icon > li {
     margin-left: 16px;
   }
-  .footer-contact ul.icon > li img {
+  footer .footer-contact ul.icon > li img {
     width: 40px;
   }
 }
 @media (max-width: 767px) {
-  .footer-contact ul.icon > li {
+  footer .footer-contact ul.icon > li {
     margin-left: 8px;
   }
-  .footer-contact ul.icon > li img {
+  footer .footer-contact ul.icon > li img {
     width: 24px;
   }
 }
-.footer-contact h3 {
+footer .footer-contact h3 {
   color: #fff;
   font-size: 36px;
   width: 100%;
   margin-top: 24px;
 }
 @media (max-width: 767px) {
-  .footer-contact h3 {
+  footer .footer-contact h3 {
     font-size: 16px;
     width: auto;
     margin-top: 0;
   }
 }
-.footer-contact h3 span {
+footer .footer-contact h3 span {
   margin-right: 20px;
   font-size: 36px;
   vertical-align: middle;
 }
 @media (max-width: 767px) {
-  .footer-contact h3 span {
+  footer .footer-contact h3 span {
     font-size: 24px;
     margin-right: 8px;
   }
 }
-.footer .copyright {
+footer .copyright {
   display: flex;
   justify-content: space-between;
   padding: 32px 0;
 }
 @media (max-width: 767px) {
-  .footer .copyright {
+  footer .copyright {
     flex-direction: column;
     padding: 16px 0 24px 0;
   }
 }
-.footer .copyright p {
+footer .copyright p {
   color: #fff;
 }
-.footer .copyright ul {
+footer .copyright ul {
   display: flex;
 }
 @media (max-width: 767px) {
-  .footer .copyright ul {
+  footer .copyright ul {
     flex-direction: column;
   }
 }
-.footer .copyright ul li {
+footer .copyright ul li {
   font-size: 14px;
   margin-left: 48px;
 }
 @media (max-width: 767px) {
-  .footer .copyright ul li {
+  footer .copyright ul li {
     font-size: 16px;
     margin-left: 0;
     margin-top: 8px;
@@ -295,7 +303,8 @@ h2 {
   background: url("/assets/images/home-header.png") no-repeat center center;
   background-size: cover;
   text-align: right;
-  padding: 296px 0;
+  padding-top: 296px;
+  padding-bottom: 296px;
   color: #650300;
 }
 @media (max-width: 992px) {
@@ -306,7 +315,8 @@ h2 {
 }
 @media (max-width: 767px) {
   .banner {
-    padding: 144px 0;
+    padding-top: 144px;
+    padding-bottom: 144px;
   }
 }
 .banner p {
@@ -334,16 +344,21 @@ h2 {
   border: 0;
   cursor: pointer;
 }
+.banner button:hover {
+  background: #7e0400;
+}
 
 .about {
   color: #650300;
   background: #fbf2f2;
-  padding: 80px 0;
+  padding-top: 80px;
+  padding-bottom: 80px;
   text-align: center;
 }
 @media (max-width: 767px) {
   .about {
-    padding: 40px 0;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 }
 .about h2 {
@@ -396,12 +411,14 @@ h2 {
 
 .classic {
   color: #650300;
-  padding: 80px 0;
+  padding-top: 80px;
+  padding-bottom: 80px;
   text-align: center;
 }
 @media (max-width: 767px) {
   .classic {
-    padding: 40px 0;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 }
 .classic ul {
@@ -442,7 +459,8 @@ h2 {
 
 .co-branding {
   text-align: center;
-  padding: 80px 0;
+  padding-top: 80px;
+  padding-bottom: 80px;
   background: url("/assets/images/index-bg.png") no-repeat center center;
   background-size: cover;
 }
@@ -454,7 +472,8 @@ h2 {
 }
 @media (max-width: 767px) {
   .co-branding {
-    padding: 40px 0;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 }
 .co-branding h2 {
@@ -507,11 +526,13 @@ h2 {
 }
 
 .recommendation {
-  padding: 80px 0;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 @media (max-width: 767px) {
   .recommendation {
-    padding: 40px 0;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 }
 .recommendation h2 {
@@ -572,11 +593,13 @@ h2 {
 
 .contact {
   background: #fbf2f2;
-  padding: 80px 0;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 @media (max-width: 767px) {
   .contact {
-    padding: 40px 0;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 }
 .contact .form {
@@ -615,7 +638,10 @@ h2 {
   font-size: 16px;
   margin-bottom: 8px;
 }
-.contact .form li input, .contact .form li textarea {
+.contact .form li input,
+.contact .form li textarea {
+  border: 1px solid #000000;
+  background: transparent;
   margin-bottom: 16px;
   padding: 6px 0 6px 12px;
   width: calc(100% - 16px);
@@ -635,19 +661,19 @@ h2 {
     margin-bottom: 24px;
   }
 }
-.contact .form .agree img {
-  height: 100%;
-}
 .contact .form button {
   display: block;
   padding: 16px 176px;
   color: #fff;
   margin: 0 auto;
   border: none;
-  background: #AA0601;
+  background: #aa0601;
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
+}
+.contact .form button:hover {
+  background: #7e0400;
 }
 @media (max-width: 992px) {
   .contact .form button {
@@ -664,11 +690,13 @@ h2 {
 }
 
 .store {
-  padding: 96px 0 80px 0;
+  padding-top: 96px;
+  padding-bottom: 80px;
 }
 @media (max-width: 767px) {
   .store {
-    padding: 40px 0 64px 0;
+    padding-top: 40px;
+    padding-bottom: 64px;
   }
 }
 .store h2 {
@@ -769,7 +797,10 @@ h2 {
     margin-right: 8px;
   }
 }
-.find input {
+.find select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   width: calc(100% - 112px);
   font-size: 18px;
   line-height: 26px;
@@ -778,7 +809,7 @@ h2 {
   border: 1px solid #ced4da;
 }
 @media (max-width: 767px) {
-  .find input {
+  .find select {
     width: calc(100% - 72px);
   }
 }

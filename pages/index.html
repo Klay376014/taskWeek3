@@ -9,13 +9,13 @@
   <body>
     <%- include('./layout/header'); -%>
 
-    <div class="banner">
+    <main class="banner">
       <div class="container">
         <p>Promise-Desert 2020 早春系列</p>
         <h2>看得清，才能看得遠</h2>
         <button type="button">立即購買</button>
       </div>
-    </div>
+    </main>
 
     <div class="about">
       <div class="container">
@@ -145,11 +145,11 @@
             </li>
             <li>
               <p>聯絡電話</p>
-              <input type="text" placeholder="0912-345-678"/>
+              <input type="tel" placeholder="0912-345-678"/>
             </li>
             <li>
               <p>電子郵件</p>
-              <input type="text" placeholder="example@email.com"/>
+              <input type="email" placeholder="example@email.com"/>
             </li>
             <li>
               <p>意見反應</p>
@@ -157,10 +157,10 @@
             </li>
           </ul>
           <div class="agree">
-            <img src="/assets/images/check_box.png" alt="checkbox">
+            <input type="checkbox">
             <span>我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</span>
           </div>
-          <button type="button">確認送出</button>
+          <button type="submit">確認送出</button>
         </div>
       </div>
     </div>

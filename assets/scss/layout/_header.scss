@@ -1,4 +1,4 @@
-.header {
+header {
   background-color: #aa0601;
 }
 
@@ -43,6 +43,12 @@
       padding: 12px 0;
       margin-left: 0;
       width: 50%;
+    }
+    &>a{
+      padding: 24px 0;
+      @include mobile{
+        padding: 12px 60px;
+      }
     }
   }
 }

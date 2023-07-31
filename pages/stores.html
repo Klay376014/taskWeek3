@@ -13,10 +13,14 @@
       <h2>門市據點</h2>
       <div class="find">
         <label for="find-store">選擇地區</label>
-        <input type="search" id="find-store" name="find-store" placeholder="台北市" readonly>
+        <select name="stores" id="store-select">
+          <option value="taipei">台北市</option>
+          <option value="taichung">台中市</option>
+          <option value="kaohsiung">高雄市</option>
+        </select>
         <span class="material-symbols-outlined">
           arrow_drop_down
-          </span>
+        </span>
       </div>
       
       <ul>

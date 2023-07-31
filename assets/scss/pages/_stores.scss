@@ -1,7 +1,7 @@
 .store {
   padding-top: 96px;
   padding-bottom: 80px;
-  @include mobile{
+  @include mobile {
     padding-top: 40px;
     padding-bottom: 64px;
   }
@@ -9,21 +9,21 @@
     border-left: 8px solid #9f1213;
     padding-left: 16px;
     margin-bottom: 32px;
-    @include mobile{
+    @include mobile {
       font-size: 24px;
       margin-bottom: 24px;
     }
   }
   ul {
-    color:#212529;
+    color: #212529;
     display: grid;
-    grid-gap:48px 1.85%;
+    grid-gap: 48px 1.85%;
     grid-template-columns: auto auto auto;
-    @include pad{
+    @include pad {
       gap: 24px 3.4%;
       grid-template-columns: auto auto;
     }
-    @include mobile{
+    @include mobile {
       column-gap: 0;
       grid-template-columns: auto;
     }
@@ -76,10 +76,10 @@
   position: relative;
   width: 32.1%;
   margin-bottom: 40px;
-  @include pad{
+  @include pad {
     width: 60%;
   }
-  @include mobile{
+  @include mobile {
     width: 100%;
     margin-bottom: 24px;
   }
@@ -87,20 +87,23 @@
     font-size: 24px;
     width: 96px;
     margin-right: 16px;
-    @include mobile{
+    @include mobile {
       font-size: 16px;
       width: 64px;
       margin-right: 8px;
     }
   }
-  input {
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
     width: calc(100% - 112px);
     font-size: 18px;
     line-height: 26px;
     color: #495057;
     padding: 6px 12px;
     border: 1px solid #ced4da;
-    @include mobile{
+    @include mobile {
       width: calc(100% - 72px);
     }
   }
