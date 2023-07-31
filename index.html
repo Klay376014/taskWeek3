@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>index</title>
-    <script type="module" crossorigin src="/taskWeek3/assets/stores-4c63641c.js"></script>
-    <link rel="stylesheet" href="/taskWeek3/assets/stores-5ed4c747.css">
+    <script type="module" crossorigin src="/taskWeek3/assets/stores-739cc843.js"></script>
+    <link rel="stylesheet" href="/taskWeek3/assets/stores-a8c272c1.css">
   </head>
   <body>
-    <div class="header">
+    <header>
   <div class="container nav">
     <h1><a href="index.html">glasses</a></h1>
     <ul>
@@ -19,14 +19,14 @@
       <li><a href="">常見問題</a></li>
     </ul>
   </div>
-</div>
-    <div class="banner">
+</header>
+    <main class="banner">
       <div class="container">
         <p>Promise-Desert 2020 早春系列</p>
         <h2>看得清，才能看得遠</h2>
         <button type="button">立即購買</button>
       </div>
-    </div>
+    </main>
 
     <div class="about">
       <div class="container">
@@ -156,11 +156,11 @@
             </li>
             <li>
               <p>聯絡電話</p>
-              <input type="text" placeholder="0912-345-678"/>
+              <input type="tel" placeholder="0912-345-678"/>
             </li>
             <li>
               <p>電子郵件</p>
-              <input type="text" placeholder="example@email.com"/>
+              <input type="email" placeholder="example@email.com"/>
             </li>
             <li>
               <p>意見反應</p>
@@ -168,15 +168,15 @@
             </li>
           </ul>
           <div class="agree">
-            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABHNCSVQICAgIfAhkiAAAAHpJREFUSEtjZKAxYKSx+Qx0t8AB6KP5QKxAps8eAPUlAvEBmH50H4AUyJNpOEwbyAxFXBb8h0qQG3QY+tENGrVgNIgIJuDRIBoNIgaGoV9UfABGIz/BqMSv4CFyfYJemoIqnAUU1AkgwxPwVTgUOh5TO7kVC9EOobkFAP48JhmPiJ/nAAAAAElFTkSuQmCC" alt="checkbox">
+            <input type="checkbox">
             <span>我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</span>
           </div>
-          <button type="button">確認送出</button>
+          <button type="submit">確認送出</button>
         </div>
       </div>
     </div>
 
-    <div class="footer">
+    <footer>
   <div class="container footer-info">
       <div class="footer-contact">
         <ul class="page">
@@ -192,9 +192,13 @@
           <li><a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABHNCSVQICAgIfAhkiAAAA41JREFUaEPtmd9xEzEQh+MKIB2YCiAV4MzwxjBJKsApgBkogCF54JnwyBNOBSQV4FRAUgGmApIKzO/LrDw6+f7oJOWcAJrReHzWrfbbXa1W8mjrgbfRA9d/698BWC6Xj+WtpwN57Go0Gl3HzNXpASm+L0Ef1J/FCCw4Zi5ZnwVy1iazEcAs/k0vTwoqlSIKkIMmj9QCmPLfN2D1JsBL/bBbB9EEgPKbtnwIMxfAbvhwDcBintC5jw0vEFKrVgfw4x6FTmjECwFUIqMCYLH/O8P0V3oXCy3UiVu/kcXGFpo56XjbXwshAHTEf5/2S4NP1GexuVuGAmSq/lb9UZ/JNLYSRjkANyggpWc9FagMFwwQn3rIKAJwjgVjLd6lnCAILwwRE1rZAKdSHPcXbbb+5hEQWQDnUp7S4k5aJEQyADE/LhU2TRawcCKVN7VkgMPcBRvrNkEcaSwFZF1LAriR8pTTgzRLsz9LAlDWku5WTZNQr1OfrNaEnr3Ws4/qfL6yBXlbSXqhsaPn7BvPPXHXGrMdyKeM3quBSPIASlTqcim0lPDK1m4AMz1/of7elLwtwvTbRN/ZJCnIjtRJnW63BqCSHFrCKAlgrYjqAYARj/FWAMAO7LxKiFZKD8mf6vevpTyQA3BqIQUEC9N5wA+hLQHEVgWDe4DYxvpul3UAJAXnAUIo9ABhVpeJkgDeaQIW3qpZCC30YGYPKepYF3xfrQEsawsYCMLGAQDkr4GDQD5ySAZhSwK4lB5kDx+ALORXktRHHIS+qL9Uf6O+50LDK9oAwPJ+hllL0xpPGh2XAkDOEymzqBFY/FHLAmauJA/w4pkAKm4urrkJbLF+FgAvHwpidleKI1fKkzqnLXMke8DJ3AkzRimgjtBx02QDsHjxROuNWV+oSOWzQ8jX60hfqJEAymo9lC8KgDCUJyVy0EkCkfKchyuFYoc1skOoTj7KE1Jz9YuYdGunr5S71zsBCKEAOg53bzfIKlOUTzljDAKArnhi4pOZ1alv+oRMaJzNAJjVyfHjrBXfsRPj0pyrRV+321OcHQ+x+jRTcfd689UiIzQhFWLMBVOXPgtb1KUUrw3Lv+963bxAOqycmLrMPcDva0mBOdv+YgKiRCiVYOPaflK3WXb9ycfmtGlPXEiH/aadPvZvVvL20CAoftJVNHYCOP/bJsRdzhCNI2xUbRUNMITWKXP8B0ixWsl3/gDzCNxAKR10ZgAAAABJRU5ErkJggg==" alt="line"></a></li>
         </ul>
         <h3>
+          <a href="tel:+886-0800000000">
           <span class="material-symbols-outlined">call</span>0800-000-000
+          </a>
           <br>
+          <a href="mailto:glasses@business.com">
           <span class="material-symbols-outlined">mail</span>glasses@business.com
+          </a>
         </h3>
       </div>
       <div class="copyright">
@@ -206,7 +210,7 @@
       </div>
     </div>
   </div>
-</div>
+</footer>
     
   </body>
 </html>
